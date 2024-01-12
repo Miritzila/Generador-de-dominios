@@ -10,10 +10,8 @@ let adj = ["genial", "gran"];
 let sust = ["corredor", "mapache"];
 
 window.onload = function() {
-  // Array para almacenar las combinaciones
   let combinaciones = [];
 
-  // Generar combinaciones utilizando forEach
   pronombre.forEach(p => {
     adj.forEach(a => {
       sust.forEach(s => {
