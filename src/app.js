@@ -23,20 +23,16 @@ window.onload = function() {
     });
   });
 
-  // Mostrar las combinaciones en la consola
   combinaciones.forEach(combinacion => {
     console.log(combinacion);
   });
 
-  // Obtén el elemento de la lista en el HTML
   let domainList = document.getElementById("domainList");
 
-  // Agrega cada combinación como un elemento de lista
   combinaciones.forEach(combinacion => {
     let listItem = document.createElement("li");
     listItem.textContent = combinacion;
 
-    // Agrega el elemento al final de la lista,
     if (domainList) {
       domainList.appendChild(listItem);
     }
